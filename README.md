@@ -9,5 +9,5 @@
 
 ## About MAYSU BLOG
 
-MAYSU BLOG is a web application for an architectural firm with the basic CRUD functionality, file handling and authentication using the expressive/elegant laravel framework. 
+MAYSU BLOG is a web application for an architecture firm with the basic CRUD functionality, file handling and authentication using the expressive/elegant laravel framework. 
 
