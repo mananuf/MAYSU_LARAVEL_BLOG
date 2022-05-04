@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Repositories\Dashboard\DashboardContract;
 
 class DashboardController extends Controller
 {
@@ -12,8 +12,11 @@ class DashboardController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    protected $repo;
+
+    public function __construct(DashboardContract $dashboardContract)
     {
+        $this->repo = $dashboardContract;
         $this->middleware('auth');
     }
 
@@ -24,9 +27,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        // identifying posts by its user
-        $user_id = auth()->user()->id;      // get user id
-        $user = User::find($user_id);       // find user
+       
+        $user = $this->repo->display();
 
         return view('dashboard')->with('posts', $user->posts);  // return with user-to-posts relationships 
     }
