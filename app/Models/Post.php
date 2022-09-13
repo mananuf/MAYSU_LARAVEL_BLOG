@@ -18,7 +18,8 @@ class Post extends Model
     // Timestamp
     public $timestamps = true;
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo('App\Models\User');    // relationship [a post belongs to a user]
     }
 }
