@@ -33,6 +33,9 @@ Route::get('/link', function () {
 // ----------------- services ROUTE ------------------
 Route::get('/services', 'PagesController@services');
 
+// ----------------- contact ROUTE ------------------
+Route::get('/contact', 'PagesController@contact');
+
 
 // ----------------- posts ROUTE -----------------
 Route::resource('posts', 'PostsController');
