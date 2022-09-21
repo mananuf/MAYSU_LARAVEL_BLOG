@@ -11,18 +11,8 @@
           <a href="{{url('/')}}" class="nav-item nav-link active">Home</a>
           <a href="{{url('/about')}}" class="nav-item nav-link">About</a>
           <a href="{{url('/services')}}" class="nav-item nav-link">Services</a>
-          <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-              <div class="dropdown-menu border-0 m-0">
-                  <a href="feature.html" class="dropdown-item">Our Features</a>
-                  <a href="project.html" class="dropdown-item">Our Projects</a>
-                  <a href="team.html" class="dropdown-item">Team Members</a>
-                  <a href="appointment.html" class="dropdown-item">Appointment</a>
-                  <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                  <a href="404.html" class="dropdown-item">404 Page</a>
-              </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="{{url('/contact')}}" class="nav-item nav-link">Contact</a>
+          <a href="{{url('/posts')}}" class="btn btn-primary py-2 px-4 d-lg-none">Blog</a>
       </div>
       <a href="{{url('/posts')}}" class="btn btn-primary py-2 px-4 d-none d-lg-block">Blog</a>
   </div>

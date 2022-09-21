@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a href="#">man Bankat</a>, All Right Reserved.
                 </div>
             </div>
         </div>
